@@ -11,7 +11,7 @@ package kattis.java;
 				System.out.println("Bob");
 				
 			}else {
-				System.out.println("Alice");
+				System.out.println("Alice1");
 			}
 
 		}
