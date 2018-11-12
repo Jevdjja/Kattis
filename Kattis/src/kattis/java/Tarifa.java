@@ -11,14 +11,17 @@ public class Tarifa {
 		int months = sc.nextInt();
 		
 		ArrayList<Integer> spentMBperMonth = new ArrayList<>();
-		int totalMB=0;
+		int totalMB=mbPerMonth;
 		
+		for(int i = 1; i <= months; i++) {
+			   spentMBperMonth.add(sc.nextInt());
+			}
 		for(int i=0; i< spentMBperMonth.size(); i++ ) {
 			
 			totalMB = (totalMB + mbPerMonth) - spentMBperMonth.get(i);
-			System.out.println(totalMB);
+			
 		}
- 
+		System.out.println(totalMB);
 	}
 
 }
